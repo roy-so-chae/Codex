@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Puzzle Game (15 퍼즐)</h1>
+      <p class="hint">숫자 타일을 순서대로 맞춰 보세요!</p>
+
+      <section class="status">
+        <span>이동 횟수: <strong id="moves">0</strong></span>
+        <span>시간: <strong id="timer">00:00</strong></span>
+      </section>
+
+      <section id="board" class="board" aria-label="퍼즐 보드"></section>
+
+      <div class="actions">
+        <button id="shuffleBtn" type="button">섞기</button>
+        <button id="resetBtn" type="button">리셋</button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
