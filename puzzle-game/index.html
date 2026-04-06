@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10x10 Word Puzzle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>10x10 영어 단어 맞추기 퍼즐</h1>
+      <p class="hint">격자에서 영어 단어를 찾아 글자를 순서대로 선택해보세요.</p>
+
+      <section class="status">
+        <span>찾은 단어: <strong id="foundCount">0</strong>/<strong id="totalCount">0</strong></span>
+        <span>시간: <strong id="timer">00:00</strong></span>
+      </section>
+
+      <section id="board" class="board" aria-label="10x10 워드 퍼즐 보드"></section>
+
+      <section class="word-panel" aria-label="찾아야 할 단어 목록">
+        <h2>찾을 단어</h2>
+        <ul id="wordList"></ul>
+      </section>
+
+      <div class="actions">
+        <button id="checkBtn" type="button">단어 확인</button>
+        <button id="newGameBtn" type="button">새 게임</button>
+        <button id="clearBtn" type="button">선택 취소</button>
+      </div>
+
+      <p id="selectedWord" class="selected-word">선택한 글자: -</p>
+      <p id="message" class="message" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
